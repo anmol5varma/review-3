@@ -2,20 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // import ReactDOM from 'react-dom';
 import './booksbyauthor.css';
+import BookCardList from '../Footer';
 
 const BooksByAuthor = props => (
   <div>
-    <div>{props.name}</div>
-
+    <div className="Author-name">{props.name}</div>
+    <div><BookCardList bookslist={props.bookslist} /></div>
   </div>
 );
 
 BooksByAuthor.propTypes = {
-  value: PropTypes.string.isRequired,
-  redirectBack: PropTypes.func,
+  name: PropTypes.string,
+  bookslist: PropTypes.array,
 };
 
 BooksByAuthor.defaultProps = {
-  redirectBack: '',
+  name: '',
+  bookslist: [],
 };
 export default BooksByAuthor;
