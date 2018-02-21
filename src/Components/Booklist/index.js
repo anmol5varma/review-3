@@ -19,14 +19,16 @@ class Booklist extends React.Component {
       for (const authorName in this.props.allBookList) {
         authorComponentList.push(<BooksByAuthor name={authorName} bookslist={this.props.allBookList[authorName]} />);
       }
-      console.log(authorComponentList, '**');
-      return authorComponentList;
     };
-    return (
-      <div>
-        {getDifferentAuthor()}
-      </div>
-    );
+    if (this.props.allBookList === null) {
+
+    } else {
+      return (
+        <div>
+          {getDifferentAuthor()}
+        </div>
+      );
+    }
   }
 }
 
