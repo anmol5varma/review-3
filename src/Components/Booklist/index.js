@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { populateTheStore } from '../../redux/actions';
 import BooksByAuthor from '../BooksByAuthor';
+import FetchToDatabase from '../FetchToDatabase';
 import './booklist.css';
 
 class Booklist extends React.Component {
@@ -21,14 +22,13 @@ class Booklist extends React.Component {
       }
     };
     if (this.props.allBookList === null) {
-
-    } else {
-      return (
-        <div>
-          {getDifferentAuthor()}
-        </div>
-      );
+      return (<FetchToDatabase />);
     }
+    return (
+      <div>
+        {getDifferentAuthor()}
+      </div>
+    );
   }
 }
 
