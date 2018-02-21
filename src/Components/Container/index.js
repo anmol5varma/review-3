@@ -1,19 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Header from '../Header';
+import Booklist from '../Booklist';
 // import ReactDOM from 'react-dom';
 import './container.css';
 
 const Container = () => (
-  <div>
-    <div><i className="material-icons">add_circle</i></div>
-    <div>
-      <i className="fas fa-camera-retro" />
-    </div>
+  <div className="Container">
+    <Header headerTitle="The Book Shelf" className="Container-header" />
+    <Booklist />
   </div>
 );
-
-Container.propTypes = {
-  value: PropTypes.string.isRequired,
-};
 
 export default Container;

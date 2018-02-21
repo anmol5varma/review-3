@@ -1,0 +1,12 @@
+.Container-header{
+  background-color: rgb(148, 71, 60);
+  color: #eee;
+  padding: 20px;
+  font-size: 25px;
+  border-bottom-right-radius: 5px;
+}
+
+.Container-title{
+  border-bottom: 2px solid rgba(217, 217, 217, 0.5);
+  padding: 0px 5px;
+}
