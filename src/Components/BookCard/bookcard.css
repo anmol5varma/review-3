@@ -1,0 +1,68 @@
+.Book-container{
+  border-radius: 15px;
+  display: flex;
+  width: 24%;
+  margin: 5px 5px;
+  flex-direction: column;
+  margin: inherit 10px;
+  background-color: white;
+  box-shadow: 1px 2px 4px rgb(171, 171, 171);
+}
+
+.Book-image-wrapper{
+  background: url('https://images-na.ssl-images-amazon.com/images/I/51VNlzbfpXL._SX331_BO1,204,203,200_.jpg');
+  background-position: center bottom;
+  height: 120px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.Book-details{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.Book-name{
+  display: flex;
+  flex-grow: 1;
+}
+
+.Book-rating{
+  display: flex;
+  flex-grow: 1;
+  font-size: 20px;
+}
+
+.Book-author{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row-reverse;
+}
+
+.likeButton{
+  border-radius: 50%;
+  background-color: rgb(140, 140, 140)
+}
+
+.Book-like{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row-reverse;
+}
+
+.unlike{
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .Book-container{
+    border-radius: 15px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: inherit 10px;
+    background-color: white;
+    box-shadow: 1px 2px 4px rgb(171, 171, 171);
+  }
+}

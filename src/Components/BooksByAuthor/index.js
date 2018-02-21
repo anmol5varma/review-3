@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // import ReactDOM from 'react-dom';
 import './booksbyauthor.css';
-import BookCardList from '../Footer';
+import BookCardList from '../BookCardList';
 
 const BooksByAuthor = props => (
-  <div>
+  <div className="Author-list">
     <div className="Author-name">{props.name}</div>
     <div><BookCardList bookslist={props.bookslist} /></div>
   </div>

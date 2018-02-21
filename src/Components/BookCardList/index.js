@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 // import ReactDOM from 'react-dom';
-import './footer.css';
+import './bookcardlist.css';
 import BookCard from '../BookCard';
 
 class BookCardList extends React.Component {

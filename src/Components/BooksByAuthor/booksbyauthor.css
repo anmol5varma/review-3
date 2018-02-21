@@ -4,3 +4,9 @@
   color: rgb(32, 32, 32);
   font-size: 30px;
 }
+
+.Author-list{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}

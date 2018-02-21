@@ -1,0 +1,9 @@
+.Card-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: rgb(234, 141, 77)
+}

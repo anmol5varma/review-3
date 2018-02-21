@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './header.css';
 
 const Header = props => (
-  <header>
+  <header className="Container-header-wraper">
     <div className="Container-header">
       <div className="Container-title">{props.headerTitle}</div>
     </div>
