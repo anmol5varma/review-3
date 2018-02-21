@@ -1,0 +1,24 @@
+.Header{
+  background-color: rgb(41, 41, 41);
+  height: 100vh;
+  position: fixed;
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Header-title{
+  color: #eee;
+  text-align: center;
+  font-size: 25px;
+  font-family: Helvetica sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.Header-serviceIcons{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column-reverse;
+}

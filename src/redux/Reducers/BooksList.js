@@ -1,17 +1,13 @@
 const defaultState = {
-  noteIndex: -1,
-  allNote: [],
-  showScreen: 1,
-  noteTitle: '',
-  noteContent: '',
+  groupedBookList: {},
 };
 
 const notes = (prevState = defaultState, action) => {
   switch (action.type) {
-    case 'ADD_NOTES': {
+    case 'ADD_TO_BOOK_LIST': {
       return {
         ...prevState,
-        allNote: prevState.allNote.concat(action.payload),
+        groupedBookList: action.payload,
       };
     }
     case 'EDIT_NOTES': {
