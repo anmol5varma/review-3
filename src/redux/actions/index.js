@@ -1,9 +1,9 @@
-const add = 'ADD_NOTES';
+const add = 'ADD_TO_BOOK_LIST';
 const edit = 'EDIT_NOTES';
 
-export const addNote = note => ({
+export const populateTheStore = listObject => ({
   type: add,
-  payload: note,
+  payload: listObject,
 });
 
 export const editNote = (note, index) => ({
